@@ -1,0 +1,60 @@
+[0.000000] (-) TimerEvent: {}
+[0.000080] (mobile_robot) JobQueued: {'identifier': 'mobile_robot', 'dependencies': OrderedDict()}
+[0.000453] (mobile_robot) JobStarted: {'identifier': 'mobile_robot'}
+[0.007080] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'cmake'}
+[0.007823] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'build'}
+[0.008257] (mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', '--', '-j32', '-l32'], 'cwd': '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', 'env': OrderedDict({'USER': 'yalcinolgac', 'SHLVL': '0', 'HOME': '/home/yalcinolgac', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'yalcinolgac', 'NAME': 'yalcinolgac', 'WSL_INTEROP': '/run/WSL/8072_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PWD': '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}), 'shell': False}
+[0.073571] (mobile_robot) StdoutLine: {'line': b'[ 25%] Built target teleop_keyboard\n'}
+[0.073832] (mobile_robot) StdoutLine: {'line': b'[ 50%] Built target tray_controller\n'}
+[0.073873] (mobile_robot) StdoutLine: {'line': b'[ 75%] Built target mobile_robot_controller\n'}
+[0.073900] (mobile_robot) StdoutLine: {'line': b'[100%] Built target tray_joint_relay\n'}
+[0.078681] (mobile_robot) CommandEnded: {'returncode': 0}
+[0.079886] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'install'}
+[0.084161] (mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot'], 'cwd': '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', 'env': OrderedDict({'USER': 'yalcinolgac', 'SHLVL': '0', 'HOME': '/home/yalcinolgac', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'yalcinolgac', 'NAME': 'yalcinolgac', 'WSL_INTEROP': '/run/WSL/8072_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PWD': '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}), 'shell': False}
+[0.088364] (mobile_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.091313] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/mobile_robot_controller\n'}
+[0.092037] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/teleop_keyboard\n'}
+[0.092549] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/tray_controller\n'}
+[0.093528] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/tray_joint_relay\n'}
+[0.093673] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config\n'}
+[0.094122] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config/joint_names_mobile_robot.yaml\n'}
+[0.094276] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config/mobile_robot.rviz\n'}
+[0.094312] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch\n'}
+[0.094606] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/gazebo.launch\n'}
+[0.094639] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/gazebo.launch.py\n'}
+[0.095134] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/display.launch.py\n'}
+[0.095194] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/manual_control.launch.py\n'}
+[0.095225] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/display.launch\n'}
+[0.095252] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes\n'}
+[0.095342] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/outerBodyLink.STL\n'}
+[0.095422] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/palet.STL\n'}
+[0.095502] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/leftWheeltLink.STL\n'}
+[0.095586] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/trayLink.STL\n'}
+[0.095880] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/aktarici.STL\n'}
+[0.095922] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/base_link.STL\n'}
+[0.095949] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/backCasterLink.STL\n'}
+[0.095974] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/rightWheelLink.STL\n'}
+[0.095999] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/frontCasterLink.STL\n'}
+[0.096022] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf\n'}
+[0.096045] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.urdf\n'}
+[0.096070] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.sdf\n'}
+[0.096095] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.csv\n'}
+[0.096118] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot\n'}
+[0.096307] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot\n'}
+[0.096366] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh\n'}
+[0.096408] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv\n'}
+[0.096434] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/path.sh\n'}
+[0.096708] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/path.dsv\n'}
+[0.096784] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.bash\n'}
+[0.096846] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.sh\n'}
+[0.096994] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.zsh\n'}
+[0.097031] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.dsv\n'}
+[0.097062] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/package.dsv\n'}
+[0.097335] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot\n'}
+[0.097525] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake\n'}
+[0.097663] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake\n'}
+[0.097804] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/package.xml\n'}
+[0.098764] (mobile_robot) CommandEnded: {'returncode': 0}
+[0.099899] (-) TimerEvent: {}
+[0.114094] (mobile_robot) JobEnded: {'identifier': 'mobile_robot', 'rc': 0}
+[0.114531] (-) EventReactorShutdown: {}

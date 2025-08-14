@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mobile_robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.6012E-06 -2.2204E-16 0.042753"
+        rpy="0 0 0" />
+      <mass
+        value="10.0" />
+      <inertia
+        ixx="1.8217"
+        ixy="-9.2827E-16"
+        ixz="-1.2537E-05"
+        iyy="4.1378"
+        iyz="-4.2401E-15"
+        izz="5.2895" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/base_link.STL" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.5 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.05"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="1.0 0.6 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="leftWheeltLink">
+    <inertial>
+      <origin
+        xyz="3.8308E-13 1.763E-13 1.1203E-07"
+        rpy="0 0 0" />
+      <mass
+        value="9.0457" />
+      <inertia
+        ixx="0.063134"
+        ixy="-2.9772E-11"
+        ixz="-7.331E-14"
+        iyy="0.063134"
+        iyz="1.2811E-14"
+        izz="0.03752097" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5708 0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/leftWheeltLink.STL" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0375 0.0375 0.0375 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5708 0 0" />
+      <geometry>
+        <cylinder radius="0.0375" length="0.05"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>2.5</mu>
+            <mu2>2.5</mu2>
+            <fdir1>1 0 0</fdir1>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <ode>
+            <kp>1000000.0</kp>
+            <kd>1000.0</kd>
+            <min_depth>0.001</min_depth>
+            <max_vel>10.0</max_vel>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+  </link>
+  <joint
+    name="leftWheelJoint"
+    type="continuous">
+    <origin
+      xyz="0 0.325 0.0375"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="leftWheeltLink" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="100"
+      velocity="10" />
+    <dynamics
+      friction="0.1" 
+      damping="0.5" />
+  </joint>
+  <link
+    name="rightWheelLink">
+    <inertial>
+      <origin
+        xyz="-8.5487E-14 -4.1323E-13 -1.1203E-07"
+        rpy="0 0 0" />
+      <mass
+        value="9.0457" />
+      <inertia
+        ixx="0.063134"
+        ixy="-2.941E-11"
+        ixz="2.9021E-14"
+        iyy="0.063134"
+        iyz="-6.8537E-14"
+        izz="0.03752097" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5708 0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/rightWheelLink.STL" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0375 0.0375 0.0375 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5708 0 0" />
+      <geometry>
+        <cylinder radius="0.0375" length="0.05"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>2.5</mu>
+            <mu2>2.5</mu2>
+            <fdir1>1 0 0</fdir1>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <ode>
+            <kp>1000000.0</kp>
+            <kd>1000.0</kd>
+            <min_depth>0.001</min_depth>
+            <max_vel>10.0</max_vel>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+  </link>
+  <joint
+    name="rightWheelJoint"
+    type="continuous">
+    <origin
+      xyz="0 -0.325 0.0375"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rightWheelLink" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="100"
+      velocity="10" />
+    <dynamics
+      friction="0.1" 
+      damping="0.5" />
+  </joint>
+  <link
+    name="frontCasterLink">
+    <inertial>
+      <origin
+        xyz="1.1102E-16 -4.4409E-16 0.095922"
+        rpy="0 0 0" />
+      <mass
+        value="7.8759" />
+      <inertia
+        ixx="0.053362"
+        ixy="-1.0187E-17"
+        ixz="-2.0544E-17"
+        iyy="0.053362"
+        iyz="1.0521E-18"
+        izz="0.046393" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/frontCasterLink.STL" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.6 0.6 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.05"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.025" length="0.1"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.01</mu>
+            <mu2>0.01</mu2>
+            <slip1>0.5</slip1>
+            <slip2>0.5</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <ode>
+            <kp>100000.0</kp>
+            <kd>100.0</kd>
+            <min_depth>0.001</min_depth>
+            <max_vel>5.0</max_vel>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+  </link>
+  <joint
+    name="frontCasterJoint"
+    type="fixed">
+    <origin
+      xyz="0.5 0 -0.04875"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="frontCasterLink" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="backCasterLink">
+    <inertial>
+      <origin
+        xyz="0 -4.4409E-16 0.095922"
+        rpy="0 0 0" />
+      <mass
+        value="7.8759" />
+      <inertia
+        ixx="0.053362"
+        ixy="-1.5412E-17"
+        ixz="-1.1772E-18"
+        iyy="0.053362"
+        iyz="3.1146E-17"
+        izz="0.046393" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/backCasterLink.STL" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.5 0.5 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.05"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.025" length="0.1"/>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.01</mu>
+            <mu2>0.01</mu2>
+            <slip1>0.5</slip1>
+            <slip2>0.5</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <ode>
+            <kp>100000.0</kp>
+            <kd>100.0</kd>
+            <min_depth>0.001</min_depth>
+            <max_vel>5.0</max_vel>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+  </link>
+  <joint
+    name="backCasterJoint"
+    type="fixed">
+    <origin
+      xyz="-0.5 0 -0.04875"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="backCasterLink" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="outerBodyLink">
+    <inertial>
+      <origin
+        xyz="-0.56025 -3.3138E-06 4.754E-05"
+        rpy="0 0 0" />
+      <mass
+        value="65.655" />
+      <inertia
+        ixx="9.0515"
+        ixy="2.6889E-06"
+        ixz="2.3746E-14"
+        iyy="16.608"
+        iyz="-1.9865E-14"
+        izz="23.47" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/outerBodyLink.STL" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="-0.5 0 0.03755"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="1.0 0.8 0.3"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="outerBodyJoint"
+    type="fixed">
+    <origin
+      xyz="0.56025 0 0.19001"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="outerBodyLink" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="trayLink">
+    <inertial>
+      <origin
+        xyz="-2.8311E-15 2.2204E-16 -0.054663"
+        rpy="0 0 0" />
+      <mass
+        value="11.9" />
+      <inertia
+        ixx="0.6236"
+        ixy="3.5237E-16"
+        ixz="6.3071E-16"
+        iyy="1.5154"
+        iyz="-1.2715E-15"
+        izz="1.924" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://mobile_robot/meshes/trayLink.STL" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.3 0.6 0.9 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 -0.05"
+        rpy="0 0 0" />
+      <geometry>
+        <box size="0.6 1.0 0.0375"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="trayJoint"
+    type="prismatic">
+    <origin
+      xyz="0 0 0.41"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="trayLink" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.25"
+      effort="1000"
+      velocity="1.0" />
+    <dynamics
+      friction="0.0375"
+      damping="10.0" />
+  </joint>
+
+  <!-- Gazebo plugins for ROS2 Jazzy & Gazebo Ionic -->
+  
+  <!-- Physics System - MUST BE FIRST -->
+  <gazebo>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics">
+      <engine>
+        <filename>gz-physics-dartsim-plugin</filename>
+      </engine>
+    </plugin>
+  </gazebo>
+  
+  <!-- Scene Broadcaster System -->
+  <gazebo>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+  </gazebo>
+  
+  <!-- Differential Drive Plugin -->
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>leftWheelJoint</left_joint>
+      <right_joint>rightWheelJoint</right_joint>
+      <wheel_separation>0.65</wheel_separation>
+      <wheel_radius>0.0375</wheel_radius>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <max_wheel_torque>50</max_wheel_torque>
+      <max_wheel_acceleration>2.0</max_wheel_acceleration>
+      <max_wheel_velocity>5.0</max_wheel_velocity>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <tf_topic>tf</tf_topic>
+      <publish_odom_tf>true</publish_odom_tf>
+      <use_encoder_data>true</use_encoder_data>
+      <publish_wheel_joints>true</publish_wheel_joints>
+    </plugin>
+  </gazebo>
+  
+  <!-- Joint State Publisher Plugin -->
+  <gazebo>
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+      <joint_name>leftWheelJoint</joint_name>
+      <joint_name>rightWheelJoint</joint_name>
+      <joint_name>trayJoint</joint_name>
+      <topic>joint_states</topic>
+      <update_rate>50</update_rate>
+    </plugin>
+  </gazebo>
+  
+  <!-- Joint Position Controller for Tray -->
+  <gazebo>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>trayJoint</joint_name>
+      <topic>tray_position_cmd</topic>
+      <p_gain>1000</p_gain>
+      <i_gain>100</i_gain>
+      <d_gain>10</d_gain>
+      <i_max>1</i_max>
+      <i_min>-1</i_min>
+      <cmd_max>1000</cmd_max>
+      <cmd_min>-1000</cmd_min>
+      <initial_position>0</initial_position>
+    </plugin>
+  </gazebo>
+
+  <!-- Gazebo material properties -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <selfCollide>false</selfCollide>
+    <kinematic>false</kinematic>
+    <static>false</static>
+  </gazebo>
+
+  <gazebo reference="leftWheeltLink">
+    <material>Gazebo/Black</material>
+    <mu1>2.5</mu1>
+    <mu2>2.5</mu2>
+    <kp>1000000.0</kp>
+    <kd>1000.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>10.0</maxVel>
+    <fdir1>1 0 0</fdir1>
+    <selfCollide>false</selfCollide>
+    <static>false</static>
+    <slip1>0.0</slip1>
+    <slip2>0.0</slip2>
+  </gazebo>
+
+  <gazebo reference="rightWheelLink">
+    <material>Gazebo/Black</material>
+    <mu1>2.5</mu1>
+    <mu2>2.5</mu2>
+    <kp>1000000.0</kp>
+    <kd>1000.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>10.0</maxVel>
+    <fdir1>1 0 0</fdir1>
+    <selfCollide>false</selfCollide>
+    <static>false</static>
+    <slip1>0.0</slip1>
+    <slip2>0.0</slip2>
+  </gazebo>
+
+  <gazebo reference="frontCasterLink">
+    <material>Gazebo/Grey</material>
+    <mu1>0.0001</mu1>
+    <mu2>0.0001</mu2>
+    <kp>1000.0</kp>
+    <kd>10.0</kd>
+    <selfCollide>false</selfCollide>
+    <static>false</static>
+  </gazebo>
+
+  <gazebo reference="backCasterLink">
+    <material>Gazebo/Grey</material>
+    <mu1>0.0001</mu1>
+    <mu2>0.0001</mu2>
+    <kp>1000.0</kp>
+    <kd>10.0</kd>
+    <selfCollide>false</selfCollide>
+    <static>false</static>
+  </gazebo>
+
+  <gazebo reference="outerBodyLink">
+    <material>Gazebo/Red</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+    <static>false</static>
+  </gazebo>
+
+  <gazebo reference="trayLink">
+    <material>Gazebo/Blue</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <selfCollide>true</selfCollide>
+    <static>false</static>
+  </gazebo>
+
+</robot>

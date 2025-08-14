@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a0a5a28b48844ebb9a5b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mobile_robot",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mobile_robot_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mobile_robot_controller-d753c7e6a7482c115739.json",
+					"name" : "mobile_robot_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mobile_robot_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mobile_robot_uninstall-75db059a2cfaa75ca8f2.json",
+					"name" : "mobile_robot_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teleop_keyboard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleop_keyboard-846906b71008f8429e9f.json",
+					"name" : "teleop_keyboard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tray_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tray_controller-6c145df3253625cf7bc8.json",
+					"name" : "tray_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tray_joint_relay::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tray_joint_relay-c1a1b1373b77611fb2cb.json",
+					"name" : "tray_joint_relay",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a913c17849cf5899d663.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yalcinolgac/mobile_robot_ws/build/mobile_robot",
+		"source" : "/home/yalcinolgac/mobile_robot_ws/src/mobile_robot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

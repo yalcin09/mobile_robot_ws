@@ -1,0 +1,57 @@
+[0.007s] Invoking command in '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/yalcinolgac/mobile_robot_ws/build/mobile_robot -- -j32 -l32
+[0.043s] [ 37%] Built target mobile_robot_controller
+[0.043s] [ 37%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+[0.043s] [ 50%] [32mBuilding CXX object CMakeFiles/tray_controller.dir/src/tray_controller.cpp.o[0m
+[0.044s] [ 75%] Built target tray_joint_relay
+[2.414s] [ 87%] [32m[1mLinking CXX executable teleop_keyboard[0m
+[2.497s] [ 87%] Built target teleop_keyboard
+[2.916s] [100%] [32m[1mLinking CXX executable tray_controller[0m
+[3.015s] [100%] Built target tray_controller
+[3.021s] Invoked command in '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/yalcinolgac/mobile_robot_ws/build/mobile_robot -- -j32 -l32
+[3.026s] Invoking command in '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/yalcinolgac/mobile_robot_ws/build/mobile_robot
+[3.031s] -- Install configuration: ""
+[3.031s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/mobile_robot_controller
+[3.031s] -- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/teleop_keyboard
+[3.032s] -- Set non-toolchain portion of runtime path of "/home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/teleop_keyboard" to ""
+[3.032s] -- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/tray_controller
+[3.033s] -- Set non-toolchain portion of runtime path of "/home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/tray_controller" to ""
+[3.033s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/tray_joint_relay
+[3.033s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config
+[3.033s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config/joint_names_mobile_robot.yaml
+[3.033s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config/mobile_robot.rviz
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/gazebo.launch
+[3.034s] -- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/gazebo.launch.py
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/display.launch.py
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/manual_control.launch.py
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/display.launch
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/outerBodyLink.STL
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/palet.STL
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/leftWheeltLink.STL
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/trayLink.STL
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/aktarici.STL
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/base_link.STL
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/backCasterLink.STL
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/rightWheelLink.STL
+[3.034s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/frontCasterLink.STL
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf
+[3.035s] -- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.urdf
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.sdf
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.csv
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/path.sh
+[3.035s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/path.dsv
+[3.036s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.bash
+[3.036s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.sh
+[3.036s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.zsh
+[3.036s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.dsv
+[3.036s] -- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/package.dsv
+[3.036s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot
+[3.036s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake
+[3.036s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake
+[3.036s] -- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/package.xml
+[3.037s] Invoked command in '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/yalcinolgac/mobile_robot_ws/build/mobile_robot

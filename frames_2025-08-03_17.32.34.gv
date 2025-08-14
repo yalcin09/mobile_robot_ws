@@ -1,0 +1,7 @@
+digraph G {
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 43.135\nBuffer length: 5.239\nMost recent transform: 1754231554.50577\nOldest transform: 1754231549.266366\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1754231554.5093613"[ shape=plaintext ] ;
+}->"odom";
+}

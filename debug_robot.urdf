@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<robot name="debug_mobile_robot">
+  
+  <!-- Base Link -->
+  <link name="base_link">
+    <inertial>
+      <mass value="5.0"/>
+      <inertia ixx="0.5" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.2"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="1.0 0.6 0.1"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.0 0.6 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Left Wheel -->
+  <link name="leftWheelLink">
+    <inertial>
+      <mass value="2.0"/>
+      <inertia ixx="0.02" ixy="0.0" ixz="0.0" iyy="0.02" iyz="0.0" izz="0.02"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.0375" length="0.05"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.0375" length="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Right Wheel -->
+  <link name="rightWheelLink">
+    <inertial>
+      <mass value="2.0"/>
+      <inertia ixx="0.02" ixy="0.0" ixz="0.0" iyy="0.02" iyz="0.0" izz="0.02"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.0375" length="0.05"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.0375" length="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joints - Temel değerlerle -->
+  <joint name="leftWheelJoint" type="continuous">
+    <parent link="base_link"/>
+    <child link="leftWheelLink"/>
+    <origin xyz="0 0.325 0.0375" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" velocity="10"/>
+    <dynamics friction="0.1" damping="0.1"/>
+  </joint>
+
+  <joint name="rightWheelJoint" type="continuous">
+    <parent link="base_link"/>
+    <child link="rightWheelLink"/>
+    <origin xyz="0 -0.325 0.0375" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" velocity="10"/>
+    <dynamics friction="0.1" damping="0.1"/>
+  </joint>
+
+  <!-- Gazebo Properties -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+    <static>false</static>
+  </gazebo>
+
+  <gazebo reference="leftWheelLink">
+    <material>Gazebo/Black</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <static>false</static>
+  </gazebo>
+
+  <gazebo reference="rightWheelLink">
+    <material>Gazebo/Black</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <static>false</static>
+  </gazebo>
+
+  <!-- Essential Gazebo Plugins -->
+  <gazebo>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics">
+      <engine>
+        <filename>gz-physics-dartsim-plugin</filename>
+      </engine>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+  </gazebo>
+
+  <!-- Simplified DiffDrive Plugin -->
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>leftWheelJoint</left_joint>
+      <right_joint>rightWheelJoint</right_joint>
+      <wheel_separation>0.65</wheel_separation>
+      <wheel_radius>0.0375</wheel_radius>
+      <max_wheel_torque>50</max_wheel_torque>
+      <max_wheel_acceleration>2.0</max_wheel_acceleration>
+      <max_wheel_velocity>5.0</max_wheel_velocity>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <publish_odom_tf>true</publish_odom_tf>
+    </plugin>
+  </gazebo>
+
+</robot>

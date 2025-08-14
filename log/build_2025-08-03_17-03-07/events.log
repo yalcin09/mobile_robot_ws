@@ -1,0 +1,167 @@
+[0.000000] (-) TimerEvent: {}
+[0.000142] (mobile_robot) JobQueued: {'identifier': 'mobile_robot', 'dependencies': OrderedDict()}
+[0.000169] (mobile_robot) JobStarted: {'identifier': 'mobile_robot'}
+[0.008160] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'cmake'}
+[0.008787] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'build'}
+[0.009117] (mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', '--', '-j32', '-l32'], 'cwd': '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', 'env': OrderedDict({'USER': 'yalcinolgac', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/yalcinolgac', 'OLDPWD': '/home/yalcinolgac/mobile_robot_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'yalcinolgac', 'NAME': 'yalcinolgac', 'WSL_INTEROP': '/run/WSL/27816_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.056505] (mobile_robot) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099576] (-) TimerEvent: {}
+[0.199788] (-) TimerEvent: {}
+[0.232560] (mobile_robot) StdoutLine: {'line': b'-- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.299844] (-) TimerEvent: {}
+[0.300234] (mobile_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.314082] (mobile_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.333992] (mobile_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.350814] (mobile_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399912] (-) TimerEvent: {}
+[0.419275] (mobile_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.422963] (mobile_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.492892] (mobile_robot) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.499994] (-) TimerEvent: {}
+[0.506577] (mobile_robot) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.519492] (mobile_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.586085] (mobile_robot) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.600095] (-) TimerEvent: {}
+[0.614986] (mobile_robot) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.634487] (mobile_robot) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[0.655886] (mobile_robot) StdoutLine: {'line': b'-- Found tf2: 0.36.11 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[0.661671] (mobile_robot) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.12 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[0.700170] (-) TimerEvent: {}
+[0.766460] (mobile_robot) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.12 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[0.783646] (mobile_robot) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[0.785156] (mobile_robot) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.785227] (mobile_robot) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.788118] (mobile_robot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.800230] (-) TimerEvent: {}
+[0.851938] (mobile_robot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.852837] (mobile_robot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.852907] (mobile_robot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.852936] (mobile_robot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.854058] (mobile_robot) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.854119] (mobile_robot) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.854700] (mobile_robot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.854761] (mobile_robot) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[0.855186] (mobile_robot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.855464] (mobile_robot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.856202] (mobile_robot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.856264] (mobile_robot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.857493] (mobile_robot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.859176] (mobile_robot) StdoutLine: {'line': b'-- Configuring done (0.8s)\n'}
+[0.877915] (mobile_robot) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.882738] (mobile_robot) StdoutLine: {'line': b'-- Build files have been written to: /home/yalcinolgac/mobile_robot_ws/build/mobile_robot\n'}
+[0.900360] (-) TimerEvent: {}
+[0.910330] (mobile_robot) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/mobile_robot_controller.dir/src/mobile_robot_controller.cpp.o\n'}
+[0.910436] (mobile_robot) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/tray_controller.dir/src/tray_controller.cpp.o\n'}
+[0.910465] (mobile_robot) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o\n'}
+[1.000484] (-) TimerEvent: {}
+[1.100585] (-) TimerEvent: {}
+[1.200738] (-) TimerEvent: {}
+[1.300980] (-) TimerEvent: {}
+[1.401192] (-) TimerEvent: {}
+[1.501333] (-) TimerEvent: {}
+[1.601556] (-) TimerEvent: {}
+[1.701707] (-) TimerEvent: {}
+[1.802005] (-) TimerEvent: {}
+[1.902276] (-) TimerEvent: {}
+[2.002418] (-) TimerEvent: {}
+[2.102596] (-) TimerEvent: {}
+[2.202753] (-) TimerEvent: {}
+[2.302913] (-) TimerEvent: {}
+[2.403075] (-) TimerEvent: {}
+[2.503207] (-) TimerEvent: {}
+[2.603400] (-) TimerEvent: {}
+[2.703520] (-) TimerEvent: {}
+[2.803711] (-) TimerEvent: {}
+[2.903944] (-) TimerEvent: {}
+[3.004091] (-) TimerEvent: {}
+[3.104370] (-) TimerEvent: {}
+[3.204663] (-) TimerEvent: {}
+[3.304815] (-) TimerEvent: {}
+[3.405114] (-) TimerEvent: {}
+[3.505328] (-) TimerEvent: {}
+[3.605474] (-) TimerEvent: {}
+[3.705679] (-) TimerEvent: {}
+[3.726352] (mobile_robot) StdoutLine: {'line': b'[ 66%] Linking CXX executable tray_controller\n'}
+[3.726519] (mobile_robot) StdoutLine: {'line': b'[ 83%] Linking CXX executable teleop_keyboard\n'}
+[3.805733] (-) TimerEvent: {}
+[3.876178] (mobile_robot) StdoutLine: {'line': b'[ 83%] Built target tray_controller\n'}
+[3.876296] (mobile_robot) StdoutLine: {'line': b'[ 83%] Built target teleop_keyboard\n'}
+[3.905855] (-) TimerEvent: {}
+[4.005991] (-) TimerEvent: {}
+[4.106168] (-) TimerEvent: {}
+[4.206403] (-) TimerEvent: {}
+[4.306530] (-) TimerEvent: {}
+[4.406658] (-) TimerEvent: {}
+[4.506856] (-) TimerEvent: {}
+[4.607084] (-) TimerEvent: {}
+[4.707267] (-) TimerEvent: {}
+[4.807519] (-) TimerEvent: {}
+[4.907717] (-) TimerEvent: {}
+[5.007899] (-) TimerEvent: {}
+[5.108082] (-) TimerEvent: {}
+[5.208272] (-) TimerEvent: {}
+[5.308496] (-) TimerEvent: {}
+[5.408640] (-) TimerEvent: {}
+[5.508895] (-) TimerEvent: {}
+[5.609021] (-) TimerEvent: {}
+[5.709152] (-) TimerEvent: {}
+[5.809276] (-) TimerEvent: {}
+[5.909463] (-) TimerEvent: {}
+[6.009741] (-) TimerEvent: {}
+[6.109943] (-) TimerEvent: {}
+[6.210155] (-) TimerEvent: {}
+[6.244874] (mobile_robot) StdoutLine: {'line': b'[100%] Linking CXX executable mobile_robot_controller\n'}
+[6.310220] (-) TimerEvent: {}
+[6.410430] (-) TimerEvent: {}
+[6.463173] (mobile_robot) StdoutLine: {'line': b'[100%] Built target mobile_robot_controller\n'}
+[6.469795] (mobile_robot) CommandEnded: {'returncode': 0}
+[6.470273] (mobile_robot) JobProgress: {'identifier': 'mobile_robot', 'progress': 'install'}
+[6.474972] (mobile_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot'], 'cwd': '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', 'env': OrderedDict({'USER': 'yalcinolgac', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/yalcinolgac', 'OLDPWD': '/home/yalcinolgac/mobile_robot_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'yalcinolgac', 'NAME': 'yalcinolgac', 'WSL_INTEROP': '/run/WSL/27816_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[6.479159] (mobile_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.479427] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/mobile_robot_controller\n'}
+[6.482351] (mobile_robot) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/mobile_robot_controller" to ""\n'}
+[6.482420] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/teleop_keyboard\n'}
+[6.482877] (mobile_robot) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/teleop_keyboard" to ""\n'}
+[6.482944] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/tray_controller\n'}
+[6.483782] (mobile_robot) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yalcinolgac/mobile_robot_ws/install/mobile_robot/lib/mobile_robot/tray_controller" to ""\n'}
+[6.483869] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config\n'}
+[6.483902] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config/joint_names_mobile_robot.yaml\n'}
+[6.483928] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//config/mobile_robot.rviz\n'}
+[6.484173] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch\n'}
+[6.484217] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/gazebo.launch\n'}
+[6.484255] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/gazebo.launch.py\n'}
+[6.484290] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/display.launch.py\n'}
+[6.484315] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/manual_control.launch.py\n'}
+[6.484361] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//launch/display.launch\n'}
+[6.484399] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes\n'}
+[6.484425] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/outerBodyLink.STL\n'}
+[6.484484] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/palet.STL\n'}
+[6.484513] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/leftWheeltLink.STL\n'}
+[6.484537] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/trayLink.STL\n'}
+[6.484561] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/aktarici.STL\n'}
+[6.484586] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/base_link.STL\n'}
+[6.484611] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/backCasterLink.STL\n'}
+[6.484634] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/rightWheelLink.STL\n'}
+[6.484661] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//meshes/frontCasterLink.STL\n'}
+[6.484683] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf\n'}
+[6.484736] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.urdf\n'}
+[6.484765] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.sdf\n'}
+[6.484792] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot//urdf/mobile_robot.csv\n'}
+[6.484834] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/package_run_dependencies/mobile_robot\n'}
+[6.484868] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/parent_prefix_path/mobile_robot\n'}
+[6.484893] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.sh\n'}
+[6.484921] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/ament_prefix_path.dsv\n'}
+[6.484982] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/path.sh\n'}
+[6.485058] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/environment/path.dsv\n'}
+[6.485127] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.bash\n'}
+[6.485161] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.sh\n'}
+[6.485382] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.zsh\n'}
+[6.485439] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/local_setup.dsv\n'}
+[6.485467] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/package.dsv\n'}
+[6.485492] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/ament_index/resource_index/packages/mobile_robot\n'}
+[6.485860] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig.cmake\n'}
+[6.485925] (mobile_robot) StdoutLine: {'line': b'-- Up-to-date: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/cmake/mobile_robotConfig-version.cmake\n'}
+[6.485952] (mobile_robot) StdoutLine: {'line': b'-- Installing: /home/yalcinolgac/mobile_robot_ws/install/mobile_robot/share/mobile_robot/package.xml\n'}
+[6.486816] (mobile_robot) CommandEnded: {'returncode': 0}
+[6.497959] (mobile_robot) JobEnded: {'identifier': 'mobile_robot', 'rc': 0}
+[6.498538] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+Invoking command in '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot': /usr/bin/cmake --build /home/yalcinolgac/mobile_robot_ws/build/mobile_robot -- -j32 -l32
+Invoked command in '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot' returned '0': /usr/bin/cmake --build /home/yalcinolgac/mobile_robot_ws/build/mobile_robot -- -j32 -l32
+Invoking command in '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot': /usr/bin/cmake --install /home/yalcinolgac/mobile_robot_ws/build/mobile_robot
+Invoked command in '/home/yalcinolgac/mobile_robot_ws/build/mobile_robot' returned '0': /usr/bin/cmake --install /home/yalcinolgac/mobile_robot_ws/build/mobile_robot
